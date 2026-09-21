@@ -32,8 +32,8 @@ Hi, I'm **Kavi**, an AI Engineer, Full Stack Developer and creator from India �
 I like turning ideas into real products — from full-stack applications to AI-powered automation.
 
 - 🤖 Building with **AI, agents and automation**
-- 💻 Full-stack development with **Java, JavaScript/TypeScript, React and Node.js**
-- 🧠 Currently sharpening **DSA, software engineering and problem-solving**
+- 💻 Full-stack development with **JavaScript/TypeScript, React and Node.js**
+- 🧠 Currently sharpening **DSA and problem-solving with Java**, along with software engineering
 - 🚀 Building and shipping real-world products through **THE NEXT STEP**
 - 🛠️ Interested in **AI × software × automation**
 - 🌱 Learning by building, shipping and iterating
@@ -45,6 +45,8 @@ I like turning ideas into real products — from full-stack applications to AI-p
 ## my perfect stack
 
 <img src="https://skillicons.dev/icons?i=java,python,js,ts,react,nextjs,nodejs,express,mongodb,firebase,git,github,linux,docker,vscode&perline=8" alt="tech stack">
+
+<p><sub>Java is used primarily for <strong>DSA, competitive programming and problem-solving</strong>.</sub></p>
 
 </div>
 

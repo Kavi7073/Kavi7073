@@ -1,0 +1,1 @@
+Replace this file with your portrait named profile-photo.png (or jpg/jpeg), then run scripts/banner/generate.py.

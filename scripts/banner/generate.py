@@ -32,7 +32,7 @@ def make(dark):
 <text x="255" y="128" fill="{muted}" font-family="monospace" font-size="10">Subject</text><text x="510" y="128" fill="{fg}" font-family="monospace" font-size="10">Kavi Kanda</text>
 <text x="255" y="151" fill="{muted}" font-family="monospace" font-size="10">Role</text><text x="510" y="151" fill="{fg}" font-family="monospace" font-size="10">AI Engineer</text>
 <text x="255" y="174" fill="{muted}" font-family="monospace" font-size="10">Focus</text><text x="510" y="174" fill="{fg}" font-family="monospace" font-size="10">AI × Software × Automation</text>
-<text x="255" y="197" fill="{muted}" font-family="monospace" font-size="10">Stack</text><text x="510" y="197" fill="{fg}" font-family="monospace" font-size="10">Java · JS/TS · React · Node</text>
+<text x="255" y="197" fill="{muted}" font-family="monospace" font-size="10">Stack</text><text x="510" y="197" fill="{fg}" font-family="monospace" font-size="10">Java (DSA) · JS/TS · React · Node</text>
 <text x="255" y="220" fill="{muted}" font-family="monospace" font-size="10">Building</text><text x="510" y="220" fill="{fg}" font-family="monospace" font-size="10">THE NEXT STEP</text>
 <text x="255" y="243" fill="{muted}" font-family="monospace" font-size="10">Location</text><text x="510" y="243" fill="{fg}" font-family="monospace" font-size="10">India</text>
 <line x1="255" y1="270" x2="1125" y2="270" stroke="{stroke}"/><text x="255" y="296" fill="{muted}" font-family="monospace" font-size="9">STATUS</text>

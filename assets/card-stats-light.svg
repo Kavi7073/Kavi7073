@@ -1,8 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="190"><rect x="1" y="1" width="518" height="188" rx="12" fill="#ffffff" stroke="#d0d7de"/>
-<text x="22" y="30" fill="#AA9BEF" font-family="monospace" font-size="12" font-weight="700">Kavi7073</text><text x="498" y="30" text-anchor="end" fill="#57606a" font-family="monospace" font-size="9">GITHUB / LIVE</text>
-<text x="22" y="70" fill="#24292f" font-family="Arial" font-size="23" font-weight="700">GitHub statistics</text><line x1="22" y1="91" x2="498" y2="91" stroke="#d0d7de"/>
-<text x="22" y="120" fill="#57606a" font-family="Arial" font-size="10">REPOSITORIES</text><text x="22" y="143" fill="#24292f" font-family="Arial" font-size="19" font-weight="700">3</text>
-<text x="145" y="120" fill="#57606a" font-family="Arial" font-size="10">FOLLOWERS</text><text x="145" y="143" fill="#24292f" font-family="Arial" font-size="19" font-weight="700">1</text>
-<text x="268" y="120" fill="#57606a" font-family="Arial" font-size="10">PUBLIC STARS</text><text x="268" y="143" fill="#24292f" font-family="Arial" font-size="19" font-weight="700">1</text>
-<text x="391" y="120" fill="#57606a" font-family="Arial" font-size="10">LANGUAGES</text><text x="391" y="143" fill="#24292f" font-family="Arial" font-size="19" font-weight="700">4</text>
-<text x="22" y="173" fill="#57606a" font-family="Arial" font-size="9">Generated from the public GitHub API.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="190" viewBox="0 0 520 190">
+<rect x="1" y="1" width="518" height="188" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+<text x="22" y="30" fill="#AA9BEF" font-family="monospace" font-size="12" font-weight="700">Kavi7073</text>
+<text x="498" y="30" text-anchor="end" fill="#57606a" font-family="monospace" font-size="9">GITHUB / LIVE</text>
+<text x="22" y="70" fill="#24292f" font-family="Arial" font-size="23" font-weight="700">GitHub statistics</text>
+<line x1="22" y1="91" x2="498" y2="91" stroke="#d0d7de"/>
+<text x="22" y="120" fill="#57606a" font-family="Arial" font-size="10">REPOSITORIES</text><text x="22" y="143" fill="#24292f" font-family="Arial" font-size="19" font-weight="700">—</text>
+<text x="145" y="120" fill="#57606a" font-family="Arial" font-size="10">FOLLOWERS</text><text x="145" y="143" fill="#24292f" font-family="Arial" font-size="19" font-weight="700">—</text>
+<text x="268" y="120" fill="#57606a" font-family="Arial" font-size="10">PUBLIC STARS</text><text x="268" y="143" fill="#24292f" font-family="Arial" font-size="19" font-weight="700">—</text>
+<text x="391" y="120" fill="#57606a" font-family="Arial" font-size="10">LANGUAGES</text><text x="391" y="143" fill="#24292f" font-family="Arial" font-size="19" font-weight="700">—</text>
+<text x="22" y="173" fill="#57606a" font-family="Arial" font-size="9">Generated from the public GitHub API.</text>
+</svg>
