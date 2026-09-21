@@ -1,23 +1,11 @@
-# Add your photo
+# Photo setup
 
-This is the same idea as Emmi's profile: the photo is part of the custom SVG hero.
+The banner uses `assets/source/mrr.png` as the portrait source.
 
-1. Put a square portrait in `assets/`.
-2. Name it `profile-photo.png` (JPG/JPEG also works).
-3. Run:
+The supplied Kavi photo has already been placed there and the banner has been regenerated from it.
+
+If you replace the photo later, keep the filename `mrr.png` and run:
 
 ```bash
 python3 scripts/banner/generate.py
 ```
-
-The script embeds the image into the SVG as base64, so the banner carries the photo with it.
-
-Then:
-
-```bash
-git add .
-git commit -m "feat: add profile photo"
-git push
-```
-
-For the best result, use a clean portrait with your face centered and enough head/shoulder area for a circular crop.
