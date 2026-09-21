@@ -11,7 +11,7 @@
 
 <!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/Kavi7073">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=lines=Kavi+Kanda+-+Software+Developer+%26+AI+Engineer;Java+for+DSA+%2F+Problem+Solving;Building+%26+Learning+Every+Day" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=Kavi+Kanda+-+Software+Developer+%26+AI+Engineer;Java+for+DSA+%2F+Problem+Solving;Building+%26+Learning+Every+Day" alt="typing banner">
 </a>
 
 <br>
