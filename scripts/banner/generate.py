@@ -36,7 +36,7 @@ ROWS = [
     ("Education", "B.Tech · CSE · AI"),
     ("Status", "Building + Learning + Growing"),
     ("ToolChain", "VS Code · Git · GitHub"),
-    ("Core.Lang", "Java (DSA) · Python · JavaScript/TypeScript"),
+    ("Core.Lang", "Java (DSA) · Python · JS/TS"),
     ("Core.Frontend", "React · Next.js · Tailwind"),
     ("Core.Backend", "Node · Express"),
     ("Core.Database", "MongoDB · Firebase"),
