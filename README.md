@@ -11,7 +11,7 @@
 
 <!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/Kavi7073">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=Kavi+Kanda+-+DSA+Enthusiast+%26+Problem+Solver;Java+for+DSA+%2F+Software+%2F+Problem+Solving;Building+%26+Learning+Every+Day" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=lines=Kavi+Kanda+-+Software+Developer+%26+AI+Engineer;Java+for+DSA+%2F+Problem+Solving;Building+%26+Learning+Every+Day" alt="typing banner">
 </a>
 
 <br>
@@ -30,8 +30,8 @@
 
 ## This is me :)
 
-Hi, I'm **Kavi**, an DSA enthusiast, problem solver and software developer from India 🇮🇳.
-I like turning ideas into real products — from full-stack applications to software projects and problem-solving.
+Hi, I'm **Kavi**, a Software Developer and AI Engineer from India 🇮🇳.
+I like turning ideas into real products — from full-stack applications to AI-powered software and problem-solving.
 
 - 🧠 Practicing **DSA and problem-solving** with Java
 - 💻 Building software with **Python, JavaScript/TypeScript, React and Node.js**

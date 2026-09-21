@@ -31,9 +31,9 @@ SEED = 314159
 
 ROWS = [
     ("Subject", "Kavi Kanda"),
-    ("Role", "DSA Enthusiast · Problem Solver"),
+    ("Role", "Software Developer · AI Engineer"),
     ("Origin", "India"),
-    ("Education", "B.Tech · CSE"),
+    ("Education", "B.Tech · CSE · AI"),
     ("Status", "Building + Learning + Growing"),
     ("ToolChain", "VS Code · Git · GitHub"),
     ("Core.Lang", "Java (DSA) · Python · C++"),
