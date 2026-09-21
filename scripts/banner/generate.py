@@ -41,10 +41,9 @@ ROWS = [
     ("Core.Backend", "Node · Express"),
     ("Core.Database", "MongoDB · Firebase"),
     ("Core.Infra", "Vercel · Docker"),
-    ("Grid.Mail", "—"),
-    ("Grid.LinkedIn", "—"),
+    ("Grid.Mail", "kavikanda2410@gmail.com"),
+    ("Grid.LinkedIn", "/in/kavi-kanda"),
     ("Grid.GitHub", "Kavi7073"),
-    ("Grid.X", "—"),
 ]
 
 THEMES = {
@@ -158,10 +157,27 @@ def floyd_steinberg(gray: np.ndarray) -> np.ndarray:
 def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     """Return sampled x/y banner coordinates from a 300x340 dither grid."""
     source = Image.open(SOURCE).convert("RGBA")
-    # Tighter head + shoulders crop so face detail fills the VISUAL.MAP frame.
-    crop = source.crop((18, 28, 390, 450)).resize((300, 340), Image.Resampling.LANCZOS)
+    # Use the actual profile photo as a full head-and-shoulders crop.
+    # The previous version only sampled the top ~30% of the portrait, which
+    # produced mostly background/noise in VISUAL.MAP.
+    src_w, src_h = source.size
+    crop_h = int(src_w / (300 / 340))
+    top = max(0, min(src_h - crop_h, int(src_h * 0.08)))
+    crop = source.crop((0, top, src_w, top + crop_h)).resize((300, 340), Image.Resampling.LANCZOS)
     rgb = crop.convert("RGB")
-    alpha = np.asarray(crop.getchannel("A"), dtype=np.float32) / 255.0
+    # Estimate the studio background from a heavily blurred version and keep
+    # pixels that differ from it. This suppresses the grey backdrop while
+    # preserving hair, face, glasses, shirt, and jacket edges.
+    blurred = rgb.filter(ImageFilter.GaussianBlur(radius=18))
+    rgb_arr = np.asarray(rgb, dtype=np.float32)
+    blur_arr = np.asarray(blurred, dtype=np.float32)
+    diff = np.linalg.norm(rgb_arr - blur_arr, axis=2)
+    foreground = diff > 10.0
+    # Include the central subject even where the jacket/background are similar.
+    yy, xx = np.mgrid[0:340, 0:300]
+    subject_shape = (((xx - 150) / 145) ** 2 + ((yy - 215) / 190) ** 2) < 1.0
+    foreground &= (diff > 7.0) | subject_shape
+    alpha = foreground.astype(np.float32)
 
     if theme == "dark":
         lum = np.asarray(ImageOps.grayscale(rgb), dtype=np.float32)
@@ -178,8 +194,14 @@ def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     if theme == "dark":
         mask = Image.fromarray(np.uint8((alpha > 0.08) * 255), "L")
         prepared = ImageOps.equalize(prepared, mask=mask)
+        arr = np.asarray(prepared, dtype=np.float32)
+        arr[alpha <= 0.08] = 0
+        prepared = Image.fromarray(np.uint8(np.clip(arr, 0, 255)), "L")
     else:
         prepared = ImageOps.autocontrast(prepared, cutoff=1)
+        arr = np.asarray(prepared, dtype=np.float32)
+        arr[alpha <= 0.08] = 255
+        prepared = Image.fromarray(np.uint8(np.clip(arr, 0, 255)), "L")
     prepared = ImageEnhance.Contrast(prepared).enhance(1.35)
     prepared = prepared.filter(ImageFilter.UnsharpMask(radius=2, percent=175, threshold=1))
     bits = floyd_steinberg(np.asarray(prepared))
@@ -282,7 +304,7 @@ def render_svg(
         '<svg xmlns="http://www.w3.org/2000/svg" '
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         'aria-labelledby="title desc">',
-        "<title id=\"title\">Emmi's live system profile</title>",
+        "<title id=\"title\">Kavi Kanda's live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
         "DSA, code, and problem-solving silhouettes.</desc>",
         "<defs>",
