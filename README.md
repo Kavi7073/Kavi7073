@@ -1,15 +1,17 @@
 <div align="center">
 
+<!-- BANNER - terminal profile.sh --live -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img src="assets/banner-dark.svg" width="100%" alt="Kavi Kanda profile">
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/banner-dark.v9.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v9.svg">
+  <img src="assets/banner-dark.v9.svg" width="100%" alt="profile.sh --live">
 </picture>
 
 <br>
 
+<!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/Kavi7073">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=Kavi+Kanda+%E2%80%94+AI+Engineer+%26+Full+Stack+Developer;AI+%C3%97+Software+%C3%97+Automation;Building+intelligent+things." alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=Kavi+Kanda+-+DSA+Enthusiast+%26+Problem+Solver;Java+for+DSA+%2F+Software+%2F+Problem+Solving;Building+%26+Learning+Every+Day" alt="typing banner">
 </a>
 
 <br>
@@ -28,14 +30,14 @@
 
 ## This is me :)
 
-Hi, I'm **Kavi**, an AI Engineer, Full Stack Developer and creator from India 🇮🇳.
-I like turning ideas into real products — from full-stack applications to AI-powered automation.
+Hi, I'm **Kavi**, an DSA enthusiast, problem solver and software developer from India 🇮🇳.
+I like turning ideas into real products — from full-stack applications to software projects and problem-solving.
 
-- 🤖 Building with **AI, agents and automation**
-- 💻 Full-stack development with **JavaScript/TypeScript, React and Node.js**
-- 🧠 Currently sharpening **DSA and problem-solving with Java**, along with software engineering
-- 🚀 Building and shipping real-world products through **THE NEXT STEP**
-- 🛠️ Interested in **AI × software × automation**
+- 🧠 Practicing **DSA and problem-solving** with Java
+- 💻 Building software with **Python, JavaScript/TypeScript, React and Node.js**
+- ☕ Using **Java primarily for DSA and competitive/problem-solving practice**
+- 🚀 Learning by building, shipping and iterating
+- 🛠️ Interested in **DSA × software × problem-solving**
 - 🌱 Learning by building, shipping and iterating
 
 <br>
@@ -45,8 +47,6 @@ I like turning ideas into real products — from full-stack applications to AI-p
 ## my perfect stack
 
 <img src="https://skillicons.dev/icons?i=java,python,js,ts,react,nextjs,nodejs,express,mongodb,firebase,git,github,linux,docker,vscode&perline=8" alt="tech stack">
-
-<p><sub>Java is used primarily for <strong>DSA, competitive programming and problem-solving</strong>.</sub></p>
 
 </div>
 
