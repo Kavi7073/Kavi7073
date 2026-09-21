@@ -180,8 +180,13 @@ def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     alpha = foreground.astype(np.float32)
 
     if theme == "dark":
+        # Preserve actual tonal detail from the supplied transparent portrait.
+        # Do not equalize the subject: equalization was turning the dark sweater
+        # and hair into a nearly solid silhouette and hiding the facial features.
         lum = np.asarray(ImageOps.grayscale(rgb), dtype=np.float32)
-        prepared = Image.fromarray(np.uint8(np.clip(lum * alpha, 0, 255)), "L")
+        arr = lum * alpha
+        arr = np.clip((arr - 25.0) * 1.5 + 25.0, 0, 255)
+        prepared = Image.fromarray(np.uint8(arr), "L")
         select_lit = True
     else:
         white = Image.new("RGBA", crop.size, "white")
@@ -192,8 +197,6 @@ def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     # Equalize against the subject only (ignore empty alpha) so lit skin vs dark
     # hair doesn't crush midtones; then punch local contrast for facial edges.
     if theme == "dark":
-        mask = Image.fromarray(np.uint8((alpha > 0.08) * 255), "L")
-        prepared = ImageOps.equalize(prepared, mask=mask)
         arr = np.asarray(prepared, dtype=np.float32)
         arr[alpha <= 0.08] = 0
         prepared = Image.fromarray(np.uint8(np.clip(arr, 0, 255)), "L")
